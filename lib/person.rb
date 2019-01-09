@@ -10,20 +10,14 @@ class Person
   
   def happiness= (int)
     @happiness = int
-    if @happiness >= 10
-      @happiness = 10
-    elsif @happiness <= 0
-      @happiness = 0
-    end
+    return @happiness = 10 if @happiness >= 10
+    return @happiness = 0 if @happiness <= 0
   end
 
   def hygiene= (int)
     @hygiene = int
-    if @hygiene >= 10
-      @hygiene = 10
-    elsif @hygiene <= 0
-      @hygiene = 0
-    end
+    return @hygiene = 10 if @hygiene >= 10
+    return @hygiene = 0 if @hygiene <= 0
   end
 
   def clean?
